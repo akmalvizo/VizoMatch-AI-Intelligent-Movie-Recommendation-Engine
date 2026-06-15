@@ -1,4 +1,4 @@
-# 🎬 CineMatch — Movie Recommendation System
+# 🎬 VizoMatch AI Intelligent Movie Recommendation Engine
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3.8%2B-3776AB?style=for-the-badge&logo=python&logoColor=white" />
@@ -30,7 +30,7 @@
 > 📌 Run the app, take a screenshot, save it as `screenshot.png` in the root folder, then replace this block:
 >
 > ```markdown
-> ![CineMatch Demo](screenshot.png)
+> ![CineMatch Demo](screenshot/MRC.png)
 > ```
 
 ---
