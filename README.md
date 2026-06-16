@@ -27,12 +27,7 @@
 
 ## 📸 Demo
 
-> 📌 Run the app, take a screenshot, save it as `screenshot.png` in the root folder, then replace this block:
->
-> ```markdown
-> ![CineMatch Demo](screenshot/MRC.png)
-> ```
-
+![VizoMatch Demo](screenshot/screenshot.png)
 ---
 
 ## ✨ Features
