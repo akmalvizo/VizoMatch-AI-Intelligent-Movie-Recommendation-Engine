@@ -1,1 +1,166 @@
+# 🎬 VizoMatch AI – Intelligent Movie Recommendation Engine
+
+An AI-powered movie recommendation system built using **Machine Learning**, **Natural Language Processing (NLP)**, and **Streamlit**. The system recommends movies similar to the selected movie using content-based filtering and cosine similarity.
+
+---
+
+## 🚀 Features
+
+* 🎯 Content-Based Movie Recommendation
+* 🤖 Machine Learning Powered Similarity Matching
+* 🖼️ Movie Poster Fetching using API
+* 🌐 Interactive Streamlit Web Interface
+* ⚡ Fast Recommendations using Precomputed Similarity Matrix
+* 📊 Trained on the TMDB 5000 Movie Dataset
+
+---
+
+## 📂 Dataset Download
+
+First, download the **TMDB 5000 Movie Dataset** from Kaggle:
+
+🔗 Dataset Link:
+https://www.kaggle.com/datasets/tmdb/tmdb-movie-metadata
+
+The dataset contains:
+
+* `tmdb_5000_movies.csv`
+* `tmdb_5000_credits.csv`
+
+---
+
+## 🧠 Generate Required Model Files
+
+Before running the application, you need to generate the required pickle files.
+
+### Step 1: Upload Notebook to Google Colab
+
+Upload the notebook file:
+
+```bash
+Movie_Recomended_System.ipynb
+```
+
+to **Google Colab**.
+
+### Step 2: Upload Dataset
+
+Upload the downloaded dataset files to Colab and update the dataset paths according to your uploaded files.
+
+Example:
+
+```python
+movies = pd.read_csv('/content/tmdb_5000_movies.csv')
+credits = pd.read_csv('/content/tmdb_5000_credits.csv')
+```
+
+### Step 3: Run All Cells
+
+Run all cells of the notebook.
+
+After successful execution, you will obtain the following generated files:
+
+1. `movie_dict.pkl`
+2. `similarity.pkl`
+
+Download these files and place them in the project root directory.
+
+---
+
+## 📁 Project Structure
+
+```text
+Movie_Recomended_System/
+│
+├── Development/
+│   ├── app.py               # Streamlit frontend (UI + recommendation logic + poster fetching)
+│   ├── requirements.txt     # Python dependencies
+│   ├── setup.sh             # Streamlit server configuration (headless deployment)
+│   └── .gitignore           # Git ignore rules
+│
+├── movie_dict.pkl           # Processed movie data stored as pickle
+├── similarity.pkl           # Precomputed cosine similarity matrix (5000 × 5000)
+├── procfile                 # Process configuration for deployment
+└── venv/                    # Python virtual environment (not tracked in Git)
+```
+
+---
+
+## 📖 Follow Complete Setup Guide
+
+For detailed setup instructions, deployment process, and project explanation, please read the main README:
+
+🔗 https://github.com/akmalvizo/VizoMatch-AI-Intelligent-Movie-Recommendation-Engine/blob/main/README.md
+
+---
+
+## ⚙️ Installation & Execution
+
+### Clone Repository
+
+```bash
+git clone https://github.com/your-username/your-repository.git
+cd Movie_Recomended_System
+```
+
+### Install Dependencies
+
+```bash
+pip install -r Development/requirements.txt
+```
+
+### Run Streamlit Application
+
+```bash
+cd Development
+streamlit run app.py
+```
+
+The application will start locally at:
+
+```text
+http://localhost:8501
+```
+
+---
+
+## 🛠️ Technologies Used
+
+* Python
+* Pandas
+* NumPy
+* Scikit-Learn
+* Streamlit
+* Pickle
+* TMDB Dataset
+* Google Colab
+
+---
+
+## 🔬 Machine Learning Workflow
+
+1. Data Collection from TMDB Dataset
+2. Data Cleaning & Preprocessing
+3. Feature Engineering
+4. Text Vectorization
+5. Cosine Similarity Computation
+6. Recommendation Generation
+7. Streamlit Deployment
+
+---
+
+## ⭐ Support
+
+If you found this project useful, please consider giving it a **⭐ Star** on GitHub.
+
+---
+
+## 👨‍💻 Developer
+
+**Muhammad Akmal**
+AI & Machine Learning Enthusiast | Python Developer | Final Year BS Software Engineering Student
+
+---
+
+**VizoMatch AI – Discover Movies Intelligently with AI 🎥🤖**
 
